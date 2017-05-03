@@ -1,0 +1,44 @@
+<h1>All Contacts</h1>
+
+<% @contacts.each do |contact| %>
+
+  <h1>Contact Info</h1>
+  <h2>First Name: <%= contact.first_name %></h2>
+  <h2>Last Name: <%= contact.last_name %></h2>
+  <h2>Email: <%= contact.email %></h2>
+  <h2>Phone: <%= contact.phone_number %></h2>
+
+<% end %>
+
+
+<!-- Large button group -->
+<div class="btn-group">
+  <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Large button <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    ...
+  </ul>
+</div>
+
+<!-- Small button group -->
+<div class="btn-group">
+  <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Small button <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    ...
+  </ul>
+</div>
+
+<!-- Extra small button group -->
+<div class="btn-group">
+  <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Extra small button <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    ...
+  </ul>
+</div>
+
+

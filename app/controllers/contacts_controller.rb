@@ -1,5 +1,11 @@
 class ContactsController < ApplicationController
-  def call_contact
+  def one_contact
+    @contact = Contact.first
+    render 'one_contact.html.erb'
+  end
 
+  def many_contacts
+    @contacts = Contact.all
+    render 'many_contacts.html.erb'
   end
 end
