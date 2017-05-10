@@ -26,7 +26,19 @@ class ContactsController < ApplicationController
   end
 
   def update
-    
+    contact = Contact.find(params[:id])
+    contact.assign_attributes(
+                              first_name: params[:first_name],
+                              last_name: params[:last_name],
+                              email: params[:email],
+                              phone_number: params[:phone_number]
+                              )
+    contact.save
+  end
+
+  def destroy
+    contact = Contact.find(params[:id])
+    contact.destroy
   end
 
 end
