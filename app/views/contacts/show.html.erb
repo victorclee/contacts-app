@@ -7,6 +7,9 @@
 <h2>Email: <%= @contact.email %></h2>
 <h2>Phone Number: <%= @contact.phone_number %></h2>
 <h2>Short Bio: <%= @contact.bio %></h2>
-
+<h2>Groups:</h2>
+  <% @contact.groups.each do |group| %>
+    <li><%= group.name %></li>
+  <% end %>
 <%= link_to "Edit Contact", "/contacts/#{ @contact.id }/edit" %>
 <%= link_to "Delete Contact", "/contacts/#{ @contact.id }" %>

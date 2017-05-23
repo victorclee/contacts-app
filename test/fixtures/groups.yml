@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Friends: MyString
+  Family: MyString
+  Business: MyString
+  Chicago: MyString
+  SpeedDial: MyString
+
+two:
+  Friends: MyString
+  Family: MyString
+  Business: MyString
+  Chicago: MyString
+  SpeedDial: MyString
